@@ -1,0 +1,45 @@
+.card{
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  margin: 7px 0;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover{
+    margin-left: 5px;
+    .card-name{
+      background-color: #cecbcb;
+    }
+  }
+  &-id{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color:#405061 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+  }
+  &-name{
+    background-color: #EEEEEE;
+    width: 13rem;
+    padding: 7px;
+    color: black;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.3s;
+  }
+
+}
+
+.card-ischosen{
+  &:hover{
+    .card-name{
+      background-color: #626161;
+    }
+  }
+  .card-name{
+    background-color: #000000;
+    color: white;
+  }
+}
